@@ -7,7 +7,11 @@ body {
     margin: 0 auto;
     text-align: center;
     background-color: white;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 4s;
 }
+
 
 header {
     position: fixed;
@@ -15,7 +19,7 @@ header {
     z-index: 10;
     width: 100%;
     height: 70px;
-    background-color: yellow;
+    background-color: rgb(241, 218, 12);
     overflow: hidden;
     box-shadow: 3px 1px 15px #128807a6;
 }
@@ -42,6 +46,22 @@ header {
     height: 170px;
 }
 
+.titles {
+    align-content: center;
+    width: 100%;
+    height: 700px;
+    width: 100%;
+}
+
+#mega-logo {
+    position: relative;
+    height: 400px;
+    width: 700px;
+    top: 50px;
+    display: block;
+    margin: 0% auto;
+}
+
 .navbar {
     position: relative;
     float: right;
@@ -53,29 +73,42 @@ header {
     width: 175px;
     margin-top: 0;
     font-size: 100%;
+    padding-top: 20px;
 }
 
 #main-title {
     position: absolute;
-    margin: 0 auto;
-    top: 150px;
+    top: 425px;
     text-align: center;
     width: 100%;
+    margin: 0% auto;
+}
+
+p {
+    position: relative;
+    top: 100px;
+    margin: 0 30%;
+    font-size: 120%;
+    line-height: 150%;
 }
 
 .content-box {
     position: relative;
-    top: 250px;
-    width: 100%;
+    display: block;
+    top: -50px;
+    width: 40%;
+    height: 800px;
+    margin: 60px auto;
+    /* border: 1px solid black; */
 }
 
 .footer {
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(241, 218, 12);
     bottom: 0;
     box-shadow: -3px -1px 15px #128807a6;
-    position: absolute;
-    height: 15%;
+    position: fixed;
+    height: 13%;
     overflow: hidden;
     margin-bottom: auto;
 }
@@ -102,15 +135,47 @@ header {
     border: none;
 }
 
+#nuestros-productos {
+    margin-bottom: 250px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
 a:hover {
-    margin-left: 2px;
+    font-weight: bold;
     text-decoration: underline;
 }
+
+.content-img {
+    position: relative;
+    border-radius: 25px;
+    height: 450px;
+    width: 550px;
+    margin-top: -30px;
+    bottom: 60px;
+}
+
+.content-text {
+    position: relative;
+    top: 550px;
+    text-align: center;
+    margin: 0 100px;
+}
+#conviertete {
+    margin-top: -15px;
+}
+
+.content-img:hover {
+    box-shadow: 3px 3px 10px lightgrey;
+    opacity: 0.9;
+    /* bottom: 45px;
+    right: 5px; */
+}
+
+
 
 
 
